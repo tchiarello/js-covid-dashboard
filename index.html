@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Covid Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <h1>COVID-19</h1>
+
+    <div class="container">
+      <section class="item">
+        <h5>Total Confirmed</h5>
+        <p id="confirmed"></p>
+        <div class="daily-data">
+          <img
+            id="confirmed-arrow-down"
+            src="assets/img/down.png"
+            alt="seta para baixo"
+          />
+          <img
+            id="confirmed-arrow-up"
+            src="assets/img/up.png"
+            alt="seta para cima"
+          />
+          <h6 id="daily-confirmed"></h6>
+        </div>
+      </section>
+
+      <section class="item">
+        <h5>Total Deaths</h5>
+        <p id="deaths"></p>
+        <div class="daily-data">
+          <img
+            id="deaths-arrow-down"
+            src="assets/img/down.png"
+            alt="seta para baixo"
+          />
+          <img
+            id="deaths-arrow-up"
+            src="assets/img/up.png"
+            alt="seta para cima"
+          />
+          <h6 id="daily-deaths"></h6>
+        </div>
+      </section>
+
+      <section class="item">
+        <h5>Total Recovered</h5>
+        <p id="recovered"></p>
+        <div class="daily-data">
+          <img
+            id="recovered-arrow-down"
+            src="assets/img/down.png"
+            alt="seta para baixo"
+          />
+          <img
+            id="recovered-arrow-up"
+            src="assets/img/up.png"
+            alt="seta para cima"
+          />
+          <h6 id="daily-recovered"></h6>
+        </div>
+      </section>
+
+      <section class="item">
+        <h5>Total Active</h5>
+        <p id="active"></p>
+        <div class="daily-data">
+          <img
+            id="active-arrow-down"
+            src="assets/img/down.png"
+            alt="seta para baixo"
+          />
+          <img
+            id="active-arrow-up"
+            src="assets/img/up.png"
+            alt="seta para cima"
+          />
+          <h6 id="daily-active"></h6>
+        </div>
+      </section>
+    </div>
+
+    <p id="message">*No data available for this country</p>
+
+    <div class="select-container">
+      <input id="today" type="date" min="2020-01-01" />
+
+      <select class="custom-select" id="all-countries">
+        <option>Global</option>
+      </select>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
